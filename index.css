@@ -1,0 +1,197 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    font-family: arial,sans-serif;
+
+}
+
+form input, form input:focus {
+    border: 1px solid grey;  
+    border-radius: 20px;   
+}
+
+form input:focus {
+    outline-style: none;
+    box-shadow: none;
+}
+
+form p {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px 50px 10px 50px;
+    margin-top: 20px;
+}
+
+footer {
+    color: rgba(0,0,0,.54);
+    background-color: #f2f2f2;
+}
+
+footer p {
+    font-size: 1.1rem;
+}
+
+#footer-country-holder {
+    border-bottom: 1px solid lightgrey;
+}
+
+#footer-country-holder, #footer-container {
+    padding: 10px 25px;  
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    align-items: center;
+}
+
+nav ul {
+    justify-content: flex-end;   
+}
+
+
+#footer-container ul{
+    justify-content: center; 
+    gap: 30px;
+    padding: 10px 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 10px 15px;
+}
+
+nav a {
+    color: black;
+    margin-right: 17px;
+}
+
+#footer-container a {
+    color: Grey;
+}
+
+
+#grid-icon {
+    height: 3vw;
+}
+
+#account-icon {
+    border-radius: 50%;
+    height: 6vw;
+}
+
+#logo {
+    display: block;
+    margin: auto;
+    height: 78px;
+}
+
+main div {
+    width: 90%;
+    margin: auto;
+}
+
+.relative {
+    position: relative;
+    width: 100%;
+}
+
+#search-icon, #mic-icon {
+    position: absolute;
+    height: 3vw;
+    top: 10px;
+}
+
+#search-icon {
+    left: 20px;   
+}
+
+#mic-icon{
+    right: 20px;     
+}
+
+main {
+    padding: 10px 0 50px 0;
+}
+
+#search-buttons-container {
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+}
+
+#search-buttons-container button {
+    padding: 10px 15px;
+    color: grey;    
+    border: none;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+#search-buttons-container button:hover {
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+    main div {
+        width: 48%;    
+    }
+    
+    #logo {
+        height: 17vh;
+    }    
+    
+    main {
+        padding: 100px 0;
+    }
+    
+    #footer-container ul {
+        justify-content: initial;
+        padding-inline-start: 0px;
+        padding: 0;
+    }
+    
+    #footer-container div:nth-child(2) {
+        float: left;
+    }
+    
+    #footer-container div:nth-child(1) {
+        float: right;
+    }    
+    
+    #search-icon, #mic-icon {
+        height: 3vh;
+    }
+
+    #grid-icon {
+        height: 3vh;
+    }
+
+    #account-icon {
+        height: 6vh;
